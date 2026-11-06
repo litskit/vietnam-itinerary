@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <title>Vietnam, south to north — Your trip map</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="The travel edit home">
+        <span class="brand-mark">✳</span><span>the travel edit<span class="brand-dot">.</span><small>YOUR PERSONAL ITINERARY</small></span>
+      </a>
+      <div class="sidebar-label">YOUR ADVENTURE</div>
+      <a class="nav-link active" href="#overview"><span>▦</span> Trip overview <span class="nav-arrow">↗</span></a>
+      <a class="nav-link" href="#itinerary"><span>▤</span> Day by day</a>
+      <a class="nav-link" href="#travel-notes"><span>◇</span> Travel notes</a>
+
+      <div class="sidebar-label route-label">THE ROUTE <span>6 STOPS</span></div>
+      <div class="sidebar-route" aria-label="Trip route">
+        <div><i>1</i><span>Ho Chi Minh City<small>NOV 6 – 8</small></span></div>
+        <div><i>2</i><span>Da Nang &amp; Hoi An<small>NOV 9 – 11</small></span></div>
+        <div><i>3</i><span>Hanoi<small>NOV 11 – 13</small></span></div>
+        <div><i>4</i><span>Ninh Binh<small>NOV 13 – 15</small></span></div>
+        <div><i>5</i><span>Ha Giang Loop<small>NOV 15 – 17</small></span></div>
+        <div><i>6</i><span>Back to Saigon<small>NOV 18 – 19</small></span></div>
+      </div>
+      <div class="sidebar-footer"><span>✦</span><div>Made for the memories<small>Vietnam is waiting for you.</small></div></div>
+    </aside>
+
+    <main>
+      <header class="topbar"><div>YOUR TRIP <span>/</span> <strong>VIETNAM 2026</strong></div><a href="#itinerary">Explore itinerary <span>↗</span></a></header>
+      <div class="content" id="overview">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ADVENTURE AWAITS</div>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-content">
+            <div class="hero-tag"><span>✳</span> YOUR PERSONAL TRAVEL GUIDE</div>
+            <h1 id="hero-title">Vietnam,<br><em>here we come.</em></h1>
+            <p>From city mornings to mountain roads.<br>Two weeks, a whole lot of memories.</p>
+            <a class="hero-button" href="#itinerary">Let’s explore <span>↗</span></a>
+          </div>
+          <div class="hero-caption"><span>✳</span> SOUTH TO NORTH <b> / </b> VIETNAM</div>
+        </section>
+
+        <section class="trip-stats" aria-label="Trip summary">
+          <div><span class="stat-icon">◷</span><p><small>THE DATES</small><strong>Nov 6 – 19, 2026</strong></p></div>
+          <div><span class="stat-icon">☼</span><p><small>THE ADVENTURE</small><strong>14 days in Vietnam</strong></p></div>
+          <div><span class="stat-icon">⌁</span><p><small>THE ROUTE</small><strong>South to north</strong></p></div>
+          <div><span class="stat-icon">✈</span><p><small>THE GRAND FINALE</small><strong>One big loop north</strong></p></div>
+        </section>
+
+        <section class="intro">
+          <div><div class="section-kicker">THE BIG PICTURE <span>✳</span></div><h2>A trip to <em>remember.</em></h2></div>
+          <p>Good food, beautiful places, and a little room to just be. Here’s your Vietnam adventure, all in one place.</p>
+        </section>
+
+        <section class="route-card" aria-labelledby="route-title">
+          <div class="route-heading"><div><span class="mini-label">YOUR JOURNEY</span><h3 id="route-title">South to north <span>↗</span></h3></div><span class="route-pill">6 STOPS · 1 INCREDIBLE TRIP</span></div>
+          <div class="route-track">
+            <div><span>01</span><strong>Ho Chi Minh<br>City</strong><small>NOV 6 – 8</small></div>
+            <div><span>02</span><strong>Da Nang<br>&amp; Hoi An</strong><small>NOV 9 – 11</small></div>
+            <div><span>03</span><strong>Hanoi</strong><small>NOV 11 – 13</small></div>
+            <div><span>04</span><strong>Ninh Binh</strong><small>NOV 13 – 15</small></div>
+            <div><span>05</span><strong>Ha Giang<br>Loop</strong><small>NOV 15 – 17</small></div>
+            <div><span>06</span><strong>Back to<br>Saigon</strong><small>NOV 18 – 19</small></div>
+          </div>
+          <div class="route-note"><span>✦</span> The journey is part of the story. <a href="#travel-notes">See important travel notes ↗</a></div>
+        </section>
+
+        <section class="itinerary-section" id="itinerary" aria-labelledby="itinerary-title">
+          <div class="itinerary-heading">
+            <div><div class="section-kicker">THE GOOD STUFF <span>✳</span></div><h2 id="itinerary-title">Your days, <em>your way.</em></h2><p>A little structure, plenty of room for spontaneity.</p></div>
+            <span class="heading-aside">NOVEMBER 2026 <span>↘</span></span>
+          </div>
+          <div class="day-picker" aria-label="Choose a day" id="day-picker"></div>
+          <div class="day-layout">
+            <article class="day-card" id="day-card" aria-live="polite"></article>
+            <aside class="side-card"><div class="side-card-image"><span>✳ THE NORTH IS CALLING</span></div><div class="side-card-content"><span class="mini-label">THE BIG ADVENTURE</span><h3>One for the<br><em>memory bank.</em></h3><p>Three days winding through the mountains on the Ha Giang Loop. Big views, little villages, and stories to bring home.</p><button type="button" id="loop-button">See the loop days <span>↗</span></button></div></aside>
+          </div>
+        </section>
+
+        <section class="notes-section" id="travel-notes">
+          <div class="section-kicker">BEFORE YOU GO <span>✳</span></div>
+          <h2>A few things <em>to know.</em></h2>
+          <div class="notes-grid">
+            <article><span>01 / GETTING THERE</span><h3>Book the morning flight</h3><p>HCMC → Da Nang on Nov 9 isn’t in the original notes. A morning flight gives you the most time in Da Nang.</p></article>
+            <article><span>02 / THE BIG TRANSFER</span><h3>Make room for rest</h3><p>The overnight bus from Ninh Binh to Ha Giang before the Nov 15 loop start is the toughest stretch. Confirm the timing and bring a sleep kit.</p></article>
+            <article><span>03 / HEADING HOME</span><h3>Protect your buffer day</h3><p>The Nov 17 journey back to HCMC is long, with a flight via Hanoi. Confirm connections; keep Nov 18 free before your Nov 19 morning flight.</p></article>
+          </div>
+          <details class="parked"><summary>Saved for another adventure <span>＋</span></summary><p>Sapa, Da Lat, Ha Long Bay / Bai Tu Long cruise, Phong Nha &amp; the Duck Stop, Ban Gioc Waterfall, Mu Cang Chai, Con Dao, Phu Quoc, Tra Su Forest, and Hue / Bach Ma. There’s always a next time.</p></details>
+        </section>
+        <footer><span>✳ &nbsp; THE TRAVEL EDIT</span><span>Made for a trip worth remembering. &nbsp; ♡</span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
